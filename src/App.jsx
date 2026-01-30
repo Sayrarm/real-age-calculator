@@ -97,6 +97,8 @@ function App() {
                     <input
                         id="birthDate"
                         type="text"
+                        inputMode="numeric" // Открывает цифровую клавиатуру на мобильных
+                        pattern="[0-9\-]*" // Разрешает только цифры и дефисы
                         placeholder="ДД-ММ-ГГГГ"
                         value={birthDate}
                         onChange={handleDateChange}
